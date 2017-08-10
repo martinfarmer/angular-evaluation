@@ -5,18 +5,11 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   templateUrl: './todo-saver.component.html',
   styleUrls: ['./todo-saver.component.css']
 })
-export class TodoSaverComponent implements OnInit {
-
-  enteredTodoText: string = "";
+export class TodoSaverComponent {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
-
-  saveTodo() {
-    console.log("Foo: ")
-    this.enteredTodoText = null;
+  saveTodo(newTodo: string) {
+    console.log("Foo: " + newTodo);
   }
 }
