@@ -8,11 +8,12 @@ import { RepositoryService }     from '../services/repository.service';
 })
 export class TodoSaverComponent {
 
-
+  savedTodos: string[] = [];
 
   constructor(private repository: RepositoryService) { }
 
   saveTodo(newTodo: string) {
-    console.log("Foo: " + newTodo);
+    this.repository.saveTodo(newTodo);
+    this.savedTodos = this.repository.getTodos();
   }
 }
