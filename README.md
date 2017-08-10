@@ -27,7 +27,7 @@ This application requires Node 6.9.0 or higher, together with NPM 3 or higher (N
 Instructions for all platforms are located here: [Node.js](https://nodejs.org/en/download/)
 
 ### Install the latest Angular CLI  
-After node is installed, install Angular CLI (v 1.2.3+) by executing from a terminal:
+After node is installed, install [Angular CLI](https://github.com/angular/angular-cli) (v 1.2.3+) by executing from a terminal:
 
     npm install -g @angular/cli
 
