@@ -10,4 +10,6 @@ export class TodoDisplayComponent {
   @Input()
   itemsToDisplay:string[] = [];
 
+  // Needs to output an event from this component when a LI element is clicked
+
 }

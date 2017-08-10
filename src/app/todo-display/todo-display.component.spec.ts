@@ -1,8 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TodoDisplayComponent } from './todo-display.component';
-import { DebugElement } from '@angular/core';
-import { By } from '@angular/platform-browser';
+
 
 describe('TodoDisplayComponent', () => {
   let component: TodoDisplayComponent;
@@ -25,12 +24,8 @@ describe('TodoDisplayComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render items in the list appropriately', () => {
-    component.itemsToDisplay = ["abcd", "efgh"];
-    fixture.detectChanges();
-    let debug: DebugElement = fixture.debugElement.query(By.css('ul'));
-    let children:DebugElement[] = debug.children;
-    expect(children[0].nativeElement.textContent).toContain("abcd");
-    expect(children[1].nativeElement.textContent).toContain("efgh");
+  it('should emit the value given to it when the remove operation is invoked', () => {
+    // Implement here
   });
+
 });

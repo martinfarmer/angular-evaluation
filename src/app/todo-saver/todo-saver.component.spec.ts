@@ -1,7 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { TodoSaverComponent } from './todo-saver.component';
 
-
 describe('TodoSaverComponent', () => {
   let component: TodoSaverComponent;
   let fixture: ComponentFixture<TodoSaverComponent>;
@@ -25,8 +24,7 @@ describe('TodoSaverComponent', () => {
     expect(component).toBeTruthy();
   });
 
-
-  it('should pass the given value to the outputted event when the save action is called', () => {
+  it('should emit the value given to it when the save operation is invoked', () => {
     spyOn(component.onTodoAdded, "emit");
     component.saveTodo("foo");
     expect(component.onTodoAdded.emit).toHaveBeenCalledWith("foo");
