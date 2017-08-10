@@ -1,7 +1,6 @@
  <div class="form-group">
     <label for="todoEntry">Enter TODO</label>
-    <input type="text" class="form-control" 
-        id="todoEntry" #todoEntry placeholder="Enter something to do here..." 
+    <input type="text" class="form-control" id="todoEntry" #todoEntry placeholder="Enter something to do here..." 
         (keyup.enter)="saveTodo(todoEntry.value); todoEntry.value='';">
     <button class="btn btn-default" type="submit" (click)="saveTodo(todoEntry.value); todoEntry.value='';">Save</button>
   </div>

@@ -1,6 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { TodoSaverComponent } from './todo-saver.component';
-import { RepositoryService }     from '../services/repository.service';
 
 
 describe('TodoSaverComponent', () => {
@@ -11,7 +10,6 @@ describe('TodoSaverComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ TodoSaverComponent ],
       providers: [
-        RepositoryService
       ]
     })
     .compileComponents();

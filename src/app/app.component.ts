@@ -16,4 +16,9 @@ export class AppComponent {
     this.repository.saveTodo(newTodo);
     this.savedTodos = this.repository.getTodos();
   }
+
+  removeItem(itemToRemove: string) {
+    this.repository.removeTodo(itemToRemove);
+    this.savedTodos = this.repository.getTodos();
+  }
 }

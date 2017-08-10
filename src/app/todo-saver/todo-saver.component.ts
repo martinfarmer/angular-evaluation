@@ -1,5 +1,4 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { RepositoryService }     from '../services/repository.service';
 
 @Component({
   selector: 'app-todo-saver',
@@ -11,7 +10,7 @@ export class TodoSaverComponent {
   @Output()
   onTodoAdded: EventEmitter<string> = new EventEmitter();
 
-  constructor(private repository: RepositoryService) { }
+  constructor() { }
 
   saveTodo(newTodo: string) {
     this.onTodoAdded.emit(newTodo);
