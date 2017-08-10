@@ -16,7 +16,7 @@ export class TodoSaverComponent implements OnInit {
 
 
   saveTodo() {
+    console.log("Foo: ")
     this.enteredTodoText = null;
-    console.log("Foo")
   }
 }
