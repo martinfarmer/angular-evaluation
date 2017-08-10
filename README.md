@@ -14,8 +14,9 @@ Include unit tests to verify expected behavior, particularly within the, app com
 
 ## Environment Setup
 
-### Install Node version: 6.11.2 LTS / NPM version 3.10.10
-Instructions for all platforms are located here: [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+### Install Node
+This application requires Node 6.11.2 LTS / NPM version 3.10.10 or later (installing Node also installs NPM).
+Instructions for all platforms are located here: [Node.js](https://nodejs.org/en/download/)
 
 ### Install the latest Angular CLI  
 After node is installed, install Angular CLI by executing from a terminal:
