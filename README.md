@@ -1,28 +1,43 @@
-# AngularEvaluation
+# Kalibri Labs Angular Technical Evaluation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.3.
+## Overview
 
-## Development server
+This project is a simple "TODO" application.  Users enter items in the left column, and type 'Enter' or click the 'Save' button to update the display list to the right.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![Screenshot of evaluation](/screenshot.png?raw=true "Screenshot of evaluation")
 
-## Code scaffolding
+## Evaluation Requirements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+Update the application so that when a user clicks an item in the display list, it removes that item via the repository service and updates the view to match.
 
-## Build
+Include unit tests to verify expected behavior, particularly within the, app component, display component, and repository service.  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Environment Setup
+
+### Install Node version: 6.11.2 LTS / NPM version 3.10.10
+Instructions for all platforms are located here: [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+
+### Install the latest Angular CLI  
+After node is installed, install Angular CLI by executing from a terminal:
+
+    npm install -g @angular/cli
+
+### Install `git`
+If not already installed locally, instructions to install `git` can be found here: [git homepage](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+### IDE
+We recommend using Visual Studio Code, though any IDE of choice could be used: [https://code.visualstudio.com/](https://code.visualstudio.com/)
+
+## Running the application
+
+From the application directory, run `ng serve` and navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Reference documentation
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* [Angular Component Interaction](https://angular.io/guide/component-interaction)
+* [Angular Testing Guidelines](https://angular.io/guide/testing)
+* [Jasmine for test spy behavior](https://jasmine.github.io/2.6/introduction.html) 
