@@ -40,4 +40,4 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 * [Angular Component Interaction](https://angular.io/guide/component-interaction)
 * [Angular Testing Guidelines](https://angular.io/guide/testing)
-* [Jasmine for test spy behavior](https://jasmine.github.io/2.6/introduction.html) 
+* [Jasmine for spy behavior](https://jasmine.github.io/2.6/introduction.html) 
