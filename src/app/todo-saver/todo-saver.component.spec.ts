@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { TodoSaverComponent } from './todo-saver.component';
+import { RepositoryService }     from '../services/repository.service';
+
 
 describe('TodoSaverComponent', () => {
   let component: TodoSaverComponent;
@@ -8,7 +9,10 @@ describe('TodoSaverComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TodoSaverComponent ]
+      declarations: [ TodoSaverComponent ],
+      providers: [
+        RepositoryService
+      ]
     })
     .compileComponents();
   }));

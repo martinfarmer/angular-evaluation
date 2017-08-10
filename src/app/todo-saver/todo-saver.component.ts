@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { RepositoryService }     from '../services/repository.service';
 
 @Component({
   selector: 'app-todo-saver',
@@ -7,7 +8,9 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class TodoSaverComponent {
 
-  constructor() { }
+
+
+  constructor(private repository: RepositoryService) { }
 
   saveTodo(newTodo: string) {
     console.log("Foo: " + newTodo);

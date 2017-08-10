@@ -1,7 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
-
 import { AppComponent } from './app.component';
 import { TodoSaverComponent } from './todo-saver/todo-saver.component';
+import { RepositoryService }     from './services/repository.service';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -9,6 +9,9 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         TodoSaverComponent
+      ],
+      providers: [
+        RepositoryService
       ],
     }).compileComponents();
   }));
