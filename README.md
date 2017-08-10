@@ -4,7 +4,7 @@
 
 This project is a simple "TODO" application.  Users enter items in the left column, and type 'Enter' or click the 'Save' button to update the display list to the right.
 
-![Screenshot of evaluation](/screenshot.png?raw=true "Screenshot of evaluation")
+![Screenshot of evaluation](./screenshot.png?raw=true "Screenshot of evaluation")
 
 ## Evaluation Requirements
 
