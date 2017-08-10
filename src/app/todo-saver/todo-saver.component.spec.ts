@@ -24,4 +24,11 @@ describe('TodoSaverComponent', () => {
   it('should be created', () => {
     expect(component).toBeTruthy();
   });
+
+
+  it('should pass the given value to the outputted event when the save action is called', () => {
+    spyOn(component.onTodoAdded, "emit");
+    component.saveTodo("foo");
+    expect(component.onTodoAdded.emit).toHaveBeenCalledWith("foo");
+  });
 });
