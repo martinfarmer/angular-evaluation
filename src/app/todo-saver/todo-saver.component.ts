@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { RepositoryService }     from '../services/repository.service';
 
 @Component({
@@ -8,12 +8,13 @@ import { RepositoryService }     from '../services/repository.service';
 })
 export class TodoSaverComponent {
 
-  savedTodos: string[] = [];
+  @Output()
+  onTodoChange: EventEmitter<any> = new EventEmitter();
 
   constructor(private repository: RepositoryService) { }
 
   saveTodo(newTodo: string) {
     this.repository.saveTodo(newTodo);
-    this.savedTodos = this.repository.getTodos();
+    this.onTodoChange.emit();
   }
 }

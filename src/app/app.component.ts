@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RepositoryService }     from './services/repository.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  
+  savedTodos: string[] = [];
+
+  constructor(private repository: RepositoryService) { }
+
+  updateDisplay() {
+    this.savedTodos = this.repository.getTodos();
+  }
 }
