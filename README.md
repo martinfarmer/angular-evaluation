@@ -35,7 +35,7 @@ After node is installed, install [Angular CLI](https://github.com/angular/angula
 If not already installed locally, instructions to install `git` can be found here: [git homepage](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 ### IDE
-We recommend using Visual Studio Code, though any IDE of choice could be used: [https://code.visualstudio.com/](https://code.visualstudio.com/)
+We recommend using [Visual Studio Code](https://code.visualstudio.com/), though any IDE of choice could be used.
 
 ## Running the application
 
