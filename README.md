@@ -6,6 +6,14 @@ This project is a simple "TODO" application.  Users enter items in the left colu
 
 ![Screenshot of evaluation](./screenshot.png?raw=true "Screenshot of evaluation")
 
+## Evaluation Procedure
+
+Fork this repository using your own Github account, implement the evaluation requirements below, and push the changes to the repository fork.  
+
+On completion, send a link to the forked repository to Kalibri for review. 
+
+Take care to ensure all requirements are met and the application and its tests run without error.  
+
 ## Evaluation Requirements
 
 Update the application so that when a user clicks an item in the display list, it removes that item via the repository service and updates the view to match.
