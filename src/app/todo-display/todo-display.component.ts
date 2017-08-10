@@ -1,18 +1,13 @@
-import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-todo-display',
   templateUrl: './todo-display.component.html',
   styleUrls: ['./todo-display.component.css']
 })
-export class TodoDisplayComponent implements OnInit {
+export class TodoDisplayComponent {
 
   @Input()
   itemsToDisplay:string[] = [];
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }
