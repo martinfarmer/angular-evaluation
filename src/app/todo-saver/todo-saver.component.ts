@@ -9,12 +9,11 @@ import { RepositoryService }     from '../services/repository.service';
 export class TodoSaverComponent {
 
   @Output()
-  onTodoChange: EventEmitter<any> = new EventEmitter();
+  onTodoAdded: EventEmitter<string> = new EventEmitter();
 
   constructor(private repository: RepositoryService) { }
 
   saveTodo(newTodo: string) {
-    this.repository.saveTodo(newTodo);
-    this.onTodoChange.emit();
+    this.onTodoAdded.emit(newTodo);
   }
 }

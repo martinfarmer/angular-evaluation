@@ -3,7 +3,7 @@
 
   <div class="row">
     <div class="col-md-6">
-      <app-todo-saver (onTodoChange)="updateDisplay()"></app-todo-saver>
+      <app-todo-saver (onTodoAdded)="handleNewTodo($event)"></app-todo-saver>
     </div>
     <div class="col-md-6">
       <app-todo-display [itemsToDisplay]="savedTodos"></app-todo-display>

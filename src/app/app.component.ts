@@ -12,7 +12,8 @@ export class AppComponent {
 
   constructor(private repository: RepositoryService) { }
 
-  updateDisplay() {
+  handleNewTodo(newTodo: string) {
+    this.repository.saveTodo(newTodo);
     this.savedTodos = this.repository.getTodos();
   }
 }

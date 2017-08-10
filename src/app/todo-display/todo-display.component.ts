@@ -10,9 +10,7 @@ export class TodoDisplayComponent implements OnInit {
   @Input()
   itemsToDisplay:string[] = [];
 
-
   constructor() { }
-
 
   ngOnInit() {
   }
