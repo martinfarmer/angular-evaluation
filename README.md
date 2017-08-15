@@ -10,9 +10,11 @@ This project is a simple "TODO" application.  Users enter items in the left colu
 
 Clone this repository, implement the evaluation requirements below.
 
-To submit, zip up your solution's directiony while excluding the `node_modules` folder, and email the .zip file to <recruitment@kalibrilabs.com>.  (node_modules will result in the zip file being too large).
+To submit, zip up your solution's directiony while excluding the `node_modules` folder*, and email the .zip file to <recruitment@kalibrilabs.com>.  
 
 Take care to ensure all requirements are met and the application and its tests run without error.  
+
+* If the `node_modules` directory is included, the compressed zip file will be too large.  You can always delete and re-generate the `node_modules` folder by running `npm install`.
 
 ## Evaluation Requirements
 
