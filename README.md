@@ -8,9 +8,7 @@ This project is a simple "TODO" application.  Users enter items in the left colu
 
 ## Evaluation Procedure
 
-Fork this repository using your own Github account, implement the evaluation requirements below, and push the changes to the repository fork.  
-
-On completion, send a link to the forked repository to Kalibri for review. 
+Clone this repository, implement the evaluation requirements below, zip up your solution EXCLUDING the `node_modules` folder, and email the .zip file to recruitment@kalibrilabs.com
 
 Take care to ensure all requirements are met and the application and its tests run without error.  
 
@@ -39,7 +37,9 @@ We recommend using [Visual Studio Code](https://code.visualstudio.com/), though 
 
 ## Running the application
 
-From the application directory, run `ng serve` and navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+From a terminal, switch to the application's directory and run `npm install` to install all dependencies in the `node_modules` folder.
+
+When complete, run `ng serve` to start the application, and navigate to `http://localhost:4200/` to access it. The app will automatically reload if you change any of the source files.
 
 ## Running unit tests
 
