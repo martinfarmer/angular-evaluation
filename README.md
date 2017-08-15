@@ -8,7 +8,9 @@ This project is a simple "TODO" application.  Users enter items in the left colu
 
 ## Evaluation Procedure
 
-Clone this repository, implement the evaluation requirements below, zip up your solution EXCLUDING the `node_modules` folder, and email the .zip file to recruitment@kalibrilabs.com
+Clone this repository, implement the evaluation requirements below.
+
+To submit, zip up your solution's directiony while excluding the `node_modules` folder, and email the .zip file to <recruitment@kalibrilabs.com>.  (node_modules will result in the zip file being too large).
 
 Take care to ensure all requirements are met and the application and its tests run without error.  
 
