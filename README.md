@@ -12,9 +12,9 @@ Clone this repository, implement the evaluation requirements below.
 
 To submit, zip up your solution's directiony while excluding the `node_modules` folder*, and email the .zip file to <recruitment@kalibrilabs.com>.  
 
-Take care to ensure all requirements are met and the application and its tests run without error.  
-
 * If the `node_modules` directory is included, the compressed zip file will be too large.  You can always delete and re-generate the `node_modules` folder by running `npm install`.
+
+Take care to ensure all requirements are met and the application and its tests run without error.  
 
 ## Evaluation Requirements
 
