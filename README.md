@@ -10,7 +10,7 @@ This project is a simple "TODO" application.  Users enter items in the left colu
 
 Clone this repository, implement the evaluation requirements below.
 
-To submit, zip up your solution's directiony while excluding the `node_modules` folder, and email the .zip file to <recruitment@kalibrilabs.com>.  
+To submit, zip up your solution's directory while excluding the `node_modules` folder, and email the .zip file to <recruitment@kalibrilabs.com>.  
 
 * If the `node_modules` directory is included, the compressed zip file will be too large.  You can always delete and re-generate the `node_modules` folder by running `npm install`.
 
@@ -20,7 +20,7 @@ Take care to ensure all requirements are met and the application and its tests r
 
 Update the application so that when a user clicks an item in the display list, it removes that item via the repository service and updates the view to match.
 
-Include unit tests to verify expected behavior, particularly within the, app component, display component, and repository service.  
+Include unit tests to verify expected behavior, particularly within the app component, display component, and repository service.  
 
 ## Environment Setup
 
