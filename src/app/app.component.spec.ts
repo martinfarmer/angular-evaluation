@@ -30,10 +30,6 @@ describe('AppComponent', () => {
     expect(component).toBeTruthy();
   }));
 
-  it('handling an item for removal should remove the item and then fetch the updated list of todo elements', async(() => {
-    // Implement here
-  }));
-
   it('handling a new todo should save and then fetch the updated list of todo elements', async(() => {
     let saveSpy = spyOn(TestBed.get(RepositoryService), 'saveTodo');
     let fetchSpy = spyOn(TestBed.get(RepositoryService), 'getTodos').and.returnValue(["eat food"]);

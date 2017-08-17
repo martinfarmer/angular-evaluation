@@ -17,5 +17,4 @@ export class AppComponent {
     this.savedTodos = this.repository.getTodos();
   }
 
-  // Need to respond to events when items are clicked in the display and pass them to the repository service
 }

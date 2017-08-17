@@ -13,12 +13,6 @@ describe('RepositoryService', () => {
     expect(service).toBeTruthy();
   }));
 
-
-  it('removeTodo() correctly removes the right element', inject([RepositoryService], (service: RepositoryService) => {
-    // Implement tests to verify the desired removeTodo() behavior 
-  }));
-
-
   it('saveTodos() properly adds elements to the repository', inject([RepositoryService], (service: RepositoryService) => {
     // Doesn't add the null value
     service.saveTodo(null);
