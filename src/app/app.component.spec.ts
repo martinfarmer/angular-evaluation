@@ -45,6 +45,25 @@ describe('AppComponent', () => {
 
     // Verify the list of 'savedTodos' was set the output of the 'getTodos()' method
     expect(component.savedTodos).toEqual(["eat food"]);
+
+  }));
+
+  it('handling removing a todo should remove and then fetch the updated list of todo elements', async(() => {
+    let removeSpy = spyOn(TestBed.get(RepositoryService), 'removeTodo');
+    let fetchSpy = spyOn(TestBed.get(RepositoryService), 'getTodos').and.returnValue(["some items"]);
+    
+    // Run the method we are testing
+    component.handleRemoveToDo("item to remove");
+
+    // Verify we saved the correct value via the repository service
+    expect(removeSpy).toHaveBeenCalledWith("item to remove");
+    
+    // Verify we fetched the data from the repository service
+    expect(fetchSpy).toHaveBeenCalled();
+
+    // Verify the list of 'savedTodos' was set the output of the 'getTodos()' method
+    expect(component.savedTodos).toEqual(["some items"]);
+
   }));
 
 });

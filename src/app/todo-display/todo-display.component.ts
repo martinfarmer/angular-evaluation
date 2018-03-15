@@ -9,5 +9,13 @@ export class TodoDisplayComponent {
 
   @Input()
   itemsToDisplay:string[] = [];
-  
+
+  @Output()
+  onTodoRemoved: EventEmitter<string> = new EventEmitter();
+
+  constructor() { }
+
+  removeTodo(todoToRemove: string) {
+    this.onTodoRemoved.emit(todoToRemove);
+  }
 }

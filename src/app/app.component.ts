@@ -17,4 +17,9 @@ export class AppComponent {
     this.savedTodos = this.repository.getTodos();
   }
 
+  handleRemoveToDo(toDoToRemove: string) {
+    this.repository.removeTodo(toDoToRemove);
+    this.savedTodos = this.repository.getTodos();
+  }
+
 }

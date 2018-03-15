@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class RepositoryService {
 
-  private todoItems : string[] = [];
+  private todoItems: string[] = [];
 
   constructor() { }
 
@@ -13,8 +13,17 @@ export class RepositoryService {
     }
   }
 
-  getTodos():string[] {
+  getTodos(): string[] {
     return this.todoItems;
+  }
+
+  removeTodo(todoToRemove: string) {
+    if (todoToRemove) {
+      const index: number = this.todoItems.indexOf(todoToRemove);
+      if (index !== -1) {
+        this.todoItems.splice(index, 1); 
+      }
+    }
   }
 
 }

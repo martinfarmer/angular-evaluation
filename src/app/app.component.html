@@ -6,7 +6,7 @@
       <app-todo-saver (onTodoAdded)="handleNewTodo($event)"></app-todo-saver>
     </div>
     <div class="col-md-6">
-      <app-todo-display [itemsToDisplay]="savedTodos"></app-todo-display>
+      <app-todo-display (onTodoRemoved)="handleRemoveToDo($event)" [itemsToDisplay]="savedTodos"></app-todo-display>
     </div>
   </div>
 </div>
